@@ -1,0 +1,15 @@
+
+
+/* Post Blog Page */
+
+  @media only screen and (max-width: 360px) {
+    .social-icon {
+      margin: 0 ;
+    }
+  }
+  
+  @media only screen and (max-width: 820px) {
+    .blog-post-body{
+      width: 370px;
+    }
+  }

@@ -1,0 +1,181 @@
+@import url('Buttons-links.css');
+@import url('Cards.css');
+@import url('Multiple-dev-PostBlog.css');
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: 150px 300px 300px;
+  grid-template-rows: 100px 590px;
+  grid-template-areas: 
+  "hd hd hd hd"
+  "sd main main main"
+  "ft ft ft ft";
+
+}
+
+.header{
+  padding: 10px 35px;
+  grid-area: hd;
+  background-color: #7999b3;
+  color: white;
+    
+}
+
+.footer{
+  grid-area: ft;
+  background-color: #7999b3;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+    
+}
+
+.aside{
+  grid-area: sd;
+
+}
+
+.main{
+  grid-area: main;
+
+}
+
+
+/*Main blog-post from here*/
+
+
+.blog-post-body {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.6;
+  /* padding: 20px; */
+  max-width: 800px;
+  margin: auto;
+
+
+
+
+  display: flex;  
+  flex-direction: column; 
+  line-height: 1.6;  
+  /* padding-right: 10px; 
+   padding-left: 10px; */
+  max-width: 800px; 
+  /* height: auto; */
+
+  margin: auto; 
+ 
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
+
+.blog-title {
+  font-size: 2em;
+  margin-bottom: 10px;
+
+}
+
+.author-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+
+}
+
+.profile-photo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+
+}
+
+.author-description h2 {
+  margin: 0;
+  font-size: 1.2em;
+
+}
+
+.author-description p {
+  margin: 0;
+  font-size: 0.9em;
+  color: #777;
+
+}
+
+.img-post{
+  width: 100%;
+  height: auto;
+} 
+
+.code {
+  background-color: #f4f4f4;
+  padding: 50px;
+  border-left: 5px solid #7999b3;
+  font-family: Arial, sans-serif; 
+}
+
+.tips{
+  margin: 20px 0;
+
+}
+
+.tips li{
+  margin-bottom: 10px;
+
+}
+
+figcaption {
+  font-size: 0.9em; 
+  color: #555; 
+  text-align: center;
+  margin-top: 10px;
+}
+
+
+
+
+@media (max-width: 1280px) {
+  .container {
+    grid-template-columns: 1fr; 
+    grid-template-rows: auto;
+    grid-template-areas:
+      "hd"
+      "main"
+      "sd"
+      "ft";
+  }
+
+  .card-container {
+    gap: 8px;
+  }
+
+}
+
+@media (max-width: 1280px) {
+  .card-container {
+    flex-direction: column; 
+    align-items: center; 
+  }
+}
+
+@media (max-width: 1280px) {
+  .first-p, .p-card {
+    font-size: 16px; 
+  }
+
+  .button {
+    font-size: 14px; 
+  }
+}
